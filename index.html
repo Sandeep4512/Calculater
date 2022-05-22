@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+
+    <link rel="stylesheet" href="styl.css" />
+</head>
+
+<body>
+    <div>
+
+        <div class="main">
+            <h3> <b>Basic Calculater</b> </h3>
+        </div>
+
+        <div class="calculater">
+            <form name="form">
+                <input type="text" class="inputtext" name="Answer" placeholder="0" class="screen">
+                <br />
+                <div class="buttons">
+
+                    <input type="button" class="btn-clear" value="C" onclick="form.Answer.value= '' ">
+                    <input type="button" value="(" class="btn-grey" onclick="form.Answer.value += '(' ">
+                    <input type="button" value=")" class="btn-grey" onclick="form.Answer.value += ')' ">
+                    <input type="button" value="/" class="btn-grey" onclick="form.Answer.value += '/' ">
+
+                    <input type="button" value="7" onclick="form.Answer.value += '7' ">
+                    <input type="button" value="8" onclick="form.Answer.value += '8' ">
+                    <input type="button" value="9" onclick="form.Answer.value += '9' ">
+                    <input type="button" value="*" class="btn-grey" onclick="form.Answer.value += '*' ">
+
+                    <input type="button" value="4" onclick="form.Answer.value += '4' ">
+                    <input type="button" value="5" onclick="form.Answer.value += '5' ">
+                    <input type="button" value="6" onclick="form.Answer.value += '6' ">
+                    <input type="button" value="-" class="btn-grey" onclick="form.Answer.value += '-' ">
+
+                    <input type="button" value="1" onclick="form.Answer.value += '1' ">
+                    <input type="button" value="2" onclick="form.Answer.value += '2' ">
+                    <input type="button" value="3" onclick="form.Answer.value += '3' ">
+                    <input type="button" value="+" class="btn-grey" onclick="form.Answer.value += '+' ">
+
+
+                    <input type="button" value="0" onclick="form.Answer.value += '0' ">
+                    <input type="button" value="." onclick="form.Answer.value += '.' ">
+                    <input type="button" value="%" onclick="form.Answer.value += '%' ">
+
+
+                    <input type="button" value="=" class="btn-equal"
+                        onclick="form.Answer.value =eval(form.Answer.value)">
+
+
+                </div>
+
+
+
+            </form>
+
+
+
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
